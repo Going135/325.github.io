@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>新安一高325班 - 2025届毕业纪念</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Microsoft YaHei", sans-serif;
+        }
+        
+        body {
+            background-color: #f9f5f0;
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        section {
+            padding: 60px 0;
+        }
+        
+        h1, h2, h3 {
+            color: #8b4513;
+            margin-bottom: 20px;
+        }
+        
+        header {
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), 
+                        url('Image_1761658476967.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            position: relative;
+        }
+        
+        .header-content h1 {
+            font-size: 3.5rem;
+            margin-bottom: 20px;
+            color: white;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+        
+        .header-content p {
+            font-size: 1.5rem;
+            margin-bottom: 30px;
+        }
+        
+        .graduation-year {
+            font-size: 8rem;
+            font-weight: bold;
+            opacity: 0.2;
+            position: absolute;
+            bottom: 20px;
+            right: 40px;
+            color: white;
+        }
+        
+        nav {
+            background-color: #8b4513;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        
+        nav ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+        }
+        
+        nav li {
+            margin: 0 15px;
+        }
+        
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 15px 20px;
+            display: block;
+            transition: all 0.3s;
+        }
+        
+        nav a:hover {
+            background-color: #a0522d;
+        }
+        
+        .class-intro {
+            text-align: center;
+            background-color: white;
+            border-radius: 10px;
+            padding: 40px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            margin-top: -80px;
+            position: relative;
+            z-index: 10;
+        }
+        
+        /* 照片墙 */
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 15px;
+            margin-top: 30px;
+        }
+        
+        .gallery-item {
+            height: 200px;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+            transition: transform 0.3s;
+        }
+        
+        .gallery-item:hover {
+            transform: scale(1.05);
+        }
+        
+        .gallery-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        
+        /* 展翅高飞部分 */
+        .fly-high {
+            text-align: center;
+            background: linear-gradient(to bottom, #f9f5f0, #e8dfd3);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .birds {
+            position: absolute;
+            top: 50px;
+            width: 100%;
+            height: 200px;
+        }
+        
+        .bird {
+            position: absolute;
+            background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><path d="M20,50 Q40,30 60,50 Q80,70 100,50" stroke="%238b4513" stroke-width="2" fill="none"/><path d="M60,50 Q70,40 80,50" stroke="%238b4513" stroke-width="2" fill="none"/></svg>');
+            background-repeat: no-repeat;
+            width: 100px;
+            height: 50px;
+            animation: fly 15s linear infinite;
+        }
+        
+        @keyframes fly {
+            0% {
+                left: -100px;
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-20px);
+            }
+            100% {
+                left: 100%;
+                transform: translateY(0);
+            }
+        }
+        
+        .future-message {
+            background-color: white;
+            border-radius: 10px;
+            padding: 30px;
+            max-width: 800px;
+            margin: 0 auto;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        /* 页脚 */
+        footer {
+            background-color: #8b4513;
+            color: white;
+            text-align: center;
+            padding: 30px 0;
+        }
+        
+        /* 响应式设计 */
+        @media (max-width: 768px) {
+            .header-content h1 {
+                font-size: 2.5rem;
+            }
+            
+            nav ul {
+                flex-direction: column;
+            }
+            
+            nav li {
+                margin: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- 头部 -->
+    <header>
+        <div class="header-content">
+            <h1>新安一高325班</h1>
+            <p>2025届毕业纪念 · 展翅高飞 · 珍贵回忆</p>
+        </div>
+        <div class="graduation-year">2025</div>
+    </header>
+    
+    <!-- 导航 -->
+    <nav>
+        <ul>
+            <li><a href="#intro">班级介绍</a></li>
+            <li><a href="#memories">珍贵回忆</a></li>
+            <li><a href="#future">展翅高飞</a></li>
+        </ul>
+    </nav>
+    
+    <!-- 主要内容 -->
+    <div class="container">
+        <!-- 班级介绍 -->
+        <section id="intro">
+            <div class="class-intro">
+                <h2>新安一高325班</h2>
+                <p>我们来自五湖四海，相聚在新安一高325班这个温暖的大家庭。三年来，我们一起学习、一起成长，经历了无数欢笑与泪水。如今，我们即将毕业，各奔东西，但325班的情谊将永远铭刻在心。</p>
+                <p>2025年，我们即将告别高中生活，踏上新的征程。愿我们都能在未来的道路上展翅高飞，实现自己的梦想！</p>
+            </div>
+        </section>
+        
+        <!-- 珍贵回忆 -->
+        <section id="memories">
+            <h2>珍贵回忆</h2>
+            <div class="gallery">
+                <div class="gallery-item">
+                    <img src="Image_1761658478097.jpg" alt="班级合影">
+                </div>
+                <div class="gallery-item">
+                    <img src="Image_1761658479126.jpg" alt="课堂学习">
+                </div>
+                <div class="gallery-item">
+                    <img src="Image_1761658480520.jpg" alt="运动会">
+                </div>
+                <div class="gallery-item">
+                    <img src="mmexport1761658487378.jpg" alt="文艺汇演">
+                </div>
+                <div class="gallery-item">
+                    <img src="mmexport1761658494769.jpg" alt="课外活动">
+                </div>
+                <div class="gallery-item">
+                    <img src="mmexport1761658498880.jpg" alt="毕业典礼">
+                </div>
+                <div class="gallery-item">
+                    <img src="mmexport1761658505341.jpg" alt="毕业典礼">
+                </div>
+                <div class="gallery-item">
+                    <img src="mmexport1761658509093.jpg" alt="毕业典礼">
+                </div>
+            </div>
+        </section>
+        
+        <!-- 展翅高飞 -->
+        <section id="future" class="fly-high">
+            <h2>展翅高飞</h2>
+         
+            <div class="future-message">
+                <p>毕业不是结束，而是新的开始。2025年，我们即将告别高中生活，踏上新的征程。</p>
+                <p>愿我们带着325班的精神，勇敢地飞向更广阔的天空！无论走到哪里，我们都是新安一高325班的一员，这份情谊将永远伴随我们前行。</p>
+                <p>让我们在各自的道路上发光发热，成为更好的自己，在未来的某一天，我们再次相聚时，能够骄傲地分享彼此的成就！</p>
+            </div>
+        </section>
+    </div>
+    
+    <!-- 页脚 -->
+    <footer>
+        <p>新安一高325班 2025届毕业纪念网站</p>
+        <p>愿我们的友谊地久天长，愿325班的精神永远传承！</p>
+    </footer>
+    
+    <script>
+        // 平滑滚动
+        document.querySelectorAll('nav a').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+                
+                window.scrollTo({
+                    top: targetElement.offsetTop - 60,
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
