@@ -144,7 +144,6 @@
             object-fit: cover;
         }
         
-        /* 展翅高飞部分 */
         .fly-high {
             text-align: center;
             background: linear-gradient(to bottom, #f9f5f0, #e8dfd3);
@@ -183,7 +182,7 @@
         }
         
         .future-message {
-            text-align: left; /* 改为左对齐 */
+            text-align: left; 
             background-color: white;
             border-radius: 10px;
             padding: 30px;
@@ -193,11 +192,10 @@
         }
         
         .future-message p {
-            text-indent: 2em; /* 首行缩进2个字符 */
+            text-indent: 2em; 
             margin-bottom: 15px;
         }
         
-        /* 页脚 */
         footer {
             background-color: #8b4513;
             color: white;
@@ -205,7 +203,6 @@
             padding: 30px 0;
         }
         
-        /* 响应式设计 */
         @media (max-width: 768px) {
             .header-content h1 {
                 font-size: 2.5rem;
@@ -222,7 +219,6 @@
     </style>
 </head>
 <body>
-    <!-- 头部 -->
     <header>
         <div class="header-content">
             <h1>新安一高325班</h1>
@@ -231,7 +227,7 @@
         <div class="graduation-year">2025</div>
     </header>
     
-    <!-- 导航 -->
+
     <nav>
         <ul>
             <li><a href="#intro">班级介绍</a></li>
@@ -240,9 +236,7 @@
         </ul>
     </nav>
     
-    <!-- 主要内容 -->
     <div class="container">
-        <!-- 班级介绍 -->
         <section id="intro">
             <div class="class-intro">
                 <h2 style="text-align: center;">聚是一团火，散作满天星------25班班级介绍</h2>
@@ -253,7 +247,7 @@
             </div>
         </section>
         
-        <!-- 珍贵回忆 -->
+
         <section id="memories">
             <h2>珍贵回忆</h2>
             <div class="gallery">
@@ -285,7 +279,6 @@
             </div>
         </section>
         
-        <!-- 展翅高飞 -->
         <section id="future" class="fly-high">
             <h2>展翅高飞</h2>
          
@@ -301,14 +294,12 @@
         </section>
     </div>
     
-    <!-- 页脚 -->
     <footer>
         <p>新安一高325班 2025届毕业纪念网站</p>
         <p>愿我们的友谊地久天长，愿325班的精神永远传承！</p>
     </footer>
     
     <script>
-        // 平滑滚动
         document.querySelectorAll('nav a').forEach(anchor => {
             anchor.addEventListener('click', function(e) {
                 e.preventDefault();
@@ -325,6 +316,7 @@
     </script>
 </body>
 </html>
+
 
 
 
